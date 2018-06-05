@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0c0c0"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="1500dp">
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#ee715b"
+                    android:scaleType="centerCrop" />
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:fitsSystemWindows="true"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/rl_search"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/shape_edit_bg"
+                android:gravity="center">
+
+                <EditText
+                    android:id="@+id/et_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:drawableLeft="@mipmap/search"
+                    android:hint="搜索"
+                    android:textColor="#8a8a8a"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+</android.support.constraint.ConstraintLayout>
